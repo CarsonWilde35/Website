@@ -34,7 +34,7 @@
     --green-dark:  #2d6648;
     --green-light: #dff0e8;
     --bg:          #f5f5f5;
-    --dark:        #2f2f2f;
+    --dark:        #1a1a1a;
     --white:       #ffffff;
     --muted:       #6b7280;
     --muted-light: #9ca3af;
@@ -69,18 +69,18 @@
   .hero-left { display:flex; flex-direction:column; justify-content:center; padding:140px 72px 100px 100px; position:relative; z-index:2; }
   .hero-eyebrow { display:flex; align-items:center; gap:14px; margin-bottom:32px; opacity:0; animation:fadeUp 0.7s 0.2s forwards; }
   .eyebrow-line { width:36px; height:2px; background:var(--green); border-radius:100px; flex-shrink:0; }
-  .eyebrow-text { font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--muted-light); font-weight:700; }
+  .eyebrow-text { font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--muted-light); font-weight:700; }
   .hero-title { font-family:'Nunito', sans-serif; font-size:clamp(40px,4.5vw,64px); font-weight:800; line-height:1.1; color:#fff; margin-bottom:16px; letter-spacing:-0.02em; opacity:0; animation:fadeUp 0.7s 0.35s forwards; }
   .hero-title strong { font-weight:400; color:var(--green); font-style:italic; font-family:'Lora', serif; display:block; font-size:0.9em; }
   .hero-divider { width:48px; height:3px; background:var(--green); border-radius:100px; margin:24px 0; opacity:0; animation:fadeUp 0.7s 0.45s forwards; }
-  .hero-desc { font-size:15px; line-height:1.8; color:rgba(255,255,255,0.85); max-width:420px; margin-bottom:44px; font-weight:400; opacity:0; animation:fadeUp 0.7s 0.55s forwards; }
+  .hero-desc { font-size:16px; line-height:1.8; color:rgba(255,255,255,0.85); max-width:420px; margin-bottom:44px; font-weight:400; opacity:0; animation:fadeUp 0.7s 0.55s forwards; }
   .hero-buttons { display:flex; gap:12px; flex-wrap:wrap; opacity:0; animation:fadeUp 0.7s 0.65s forwards; }
   .btn-primary { background:var(--green); color:#fff; padding:14px 32px; font-family:'Nunito',sans-serif; font-size:14px; font-weight:700; border:none; cursor:pointer; text-decoration:none; display:inline-block; border-radius:100px; transition:all 0.3s; }
   .btn-primary:hover { background:var(--green-dark); transform:translateY(-2px); box-shadow:0 8px 24px rgba(58,125,90,0.35); }
   .btn-ghost { background:#fff; color:var(--dark); padding:14px 28px; font-family:'Nunito',sans-serif; font-size:14px; font-weight:600; border:2px solid var(--border); cursor:pointer; text-decoration:none; display:inline-block; border-radius:100px; transition:all 0.3s; }
   .btn-ghost:hover { border-color:var(--green); color:var(--green); }
   .hero-slogan { margin-top:52px; display:flex; align-items:center; opacity:0; animation:fadeUp 0.7s 0.75s forwards; }
-  .slogan-word { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:rgba(255,255,255,0.8); font-weight:700; }
+  .slogan-word { font-size:12px; letter-spacing:3px; text-transform:uppercase; color:rgba(255,255,255,0.8); font-weight:700; }
   .slogan-sep { width:5px; height:5px; background:var(--green); border-radius:50%; margin:0 16px; opacity:0.9; }
 
   /* HERO PHOTO */
@@ -104,15 +104,15 @@
   .promise-item:last-child { border-right:none; }
   .promise-item:hover { background:var(--green-light); }
   .promise-title { font-family:'Nunito', sans-serif; font-size:18px; font-weight:800; color:var(--dark); letter-spacing:-0.01em; }
-  .promise-desc { font-size:12px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; }
+  .promise-desc { font-size:13px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; }
 
   /* SECTION HELPERS */
   .section-tag { display:inline-flex; align-items:center; gap:12px; margin-bottom:16px; }
   .tag-line { width:28px; height:2px; background:var(--green); border-radius:100px; flex-shrink:0; }
-  .tag-text { font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--green); font-weight:700; }
+  .tag-text { font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:var(--green); font-weight:700; }
   .section-title { font-family:'Nunito', sans-serif; font-size:clamp(28px,2.8vw,42px); font-weight:800; line-height:1.15; color:var(--dark); margin-bottom:20px; letter-spacing:-0.02em; }
   .section-title em { font-style:italic; font-family:'Lora', serif; color:var(--green); font-weight:400; font-size:0.92em; }
-  .body-text { font-size:14px; line-height:1.9; color:var(--muted); font-weight:400; margin-bottom:16px; }
+  .body-text { font-size:15px; line-height:1.9; color:var(--muted); font-weight:400; margin-bottom:16px; }
 
   /* ABOUT */
   .about { padding:100px 72px; background:var(--bg); display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center; }
@@ -122,7 +122,7 @@
   .about-author { display:flex; align-items:center; gap:16px; }
   .author-photo { width:52px; height:52px; border-radius:50%; object-fit:cover; object-position:center top; border:2px solid var(--green); }
   .author-name { font-size:14px; font-weight:800; color:#fff; letter-spacing:-0.01em; }
-  .author-title { font-size:11px; color:rgba(255,255,255,0.75); margin-top:3px; font-weight:600; }
+  .author-title { font-size:13px; color:rgba(255,255,255,0.75); margin-top:3px; font-weight:600; }
 
   /* SERVICES */
   .services { padding:100px 72px; background:var(--dark); position:relative; overflow:hidden; }
@@ -141,7 +141,7 @@
   .service-name { font-family:'Nunito', sans-serif; font-size:22px; font-weight:800; color:#f0f4f0; margin-bottom:12px; letter-spacing:-0.01em; }
   .service-desc { font-size:14px; line-height:1.8; color:rgba(255,255,255,0.8); font-weight:400; }
   .service-list { margin-top:20px; list-style:none; display:flex; flex-direction:column; gap:8px; }
-  .service-list li { font-size:13px; color:rgba(255,255,255,0.75); padding-left:20px; position:relative; font-weight:600; }
+  .service-list li { font-size:14px; color:rgba(255,255,255,0.75); padding-left:20px; position:relative; font-weight:600; }
   .service-list li::before { content:'—'; position:absolute; left:0; color:var(--green); }
 
   /* PROCESS */
@@ -158,7 +158,7 @@
   .process-step:hover .step-desc { color:rgba(255,255,255,0.65); }
   .step-num { font-family:'Nunito', sans-serif; font-size:64px; font-weight:800; color:var(--border); line-height:1; margin-bottom:16px; transition:color 0.35s; }
   .step-name { font-family:'Nunito', sans-serif; font-size:24px; font-weight:800; color:var(--dark); margin-bottom:10px; letter-spacing:-0.01em; transition:color 0.35s; }
-  .step-desc { font-size:13px; line-height:1.8; color:var(--muted); font-weight:400; transition:color 0.35s; }
+  .step-desc { font-size:14px; line-height:1.8; color:var(--muted); font-weight:400; transition:color 0.35s; }
 
   /* CTA */
   .cta-section { margin:36px 72px; background:var(--green); border-radius:32px; padding:80px 72px; text-align:center; position:relative; overflow:hidden; }
