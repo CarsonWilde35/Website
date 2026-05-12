@@ -37,8 +37,8 @@
     --bg:          #f5f5f5;
     --dark:        #1e1e22;
     --white:       #ffffff;
-    --muted:       #6b7280;
-    --muted-light: #9ca3af;
+    --muted:       #374151;
+    --muted-light: #c5cdd8;
     --border:      #e5e7eb;
   }
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
@@ -74,7 +74,7 @@
   .hero-title { font-family:'Playfair Display', serif; font-size:clamp(40px,4.5vw,66px); font-weight:300; line-height:1.08; color:#fff; margin-bottom:16px; letter-spacing:-0.01em; opacity:0; animation:fadeUp 0.7s 0.35s forwards; }
   .hero-title strong { font-weight:400; color:var(--green); font-style:italic; font-family:'Cormorant Garamond', serif; display:block; font-size:0.9em; }
   .hero-divider { width:48px; height:3px; background:var(--green); border-radius:100px; margin:24px 0; opacity:0; animation:fadeUp 0.7s 0.45s forwards; }
-  .hero-desc { font-size:16px; line-height:1.85; color:rgba(255,255,255,0.8); max-width:420px; margin-bottom:44px; font-weight:300; letter-spacing:0.01em; opacity:0; animation:fadeUp 0.7s 0.55s forwards; }
+  .hero-desc { font-size:16px; line-height:1.85; color:rgba(255,255,255,0.92); max-width:420px; margin-bottom:44px; font-weight:400; letter-spacing:0.01em; opacity:0; animation:fadeUp 0.7s 0.55s forwards; }
   .hero-buttons { display:flex; gap:12px; flex-wrap:wrap; opacity:0; animation:fadeUp 0.7s 0.65s forwards; }
   .btn-primary { background:var(--green); color:#fff; padding:14px 32px; font-family:'Inter',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; border:none; cursor:pointer; text-decoration:none; display:inline-block; border-radius:100px; transition:all 0.3s; }
   .btn-primary:hover { background:var(--green-dark); transform:translateY(-2px); box-shadow:0 8px 24px rgba(58,125,90,0.35); }
@@ -113,7 +113,7 @@
   .tag-text { font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--green); font-weight:500; }
   .section-title { font-family:'Playfair Display', serif; font-size:clamp(28px,2.8vw,44px); font-weight:700; line-height:1.12; color:var(--dark); margin-bottom:20px; letter-spacing:-0.01em; }
   .section-title em { font-style:italic; font-family:'Cormorant Garamond', serif; color:var(--green); font-weight:400; font-size:0.92em; }
-  .body-text { font-size:15px; line-height:1.9; color:var(--muted); font-weight:300; letter-spacing:0.01em; margin-bottom:16px; }
+  .body-text { font-size:15px; line-height:1.9; color:var(--muted); font-weight:400; letter-spacing:0.01em; margin-bottom:16px; }
 
   /* ABOUT */
   .about { padding:100px 72px; background:var(--bg); display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center; }
@@ -132,7 +132,7 @@
   .services .section-title { color:#f0f4f0; margin-bottom:0; }
   .services .tag-text { color:#a0c8b0; }
   .services .tag-line { background:#a0c8b0; }
-  .services-intro { font-size:15px; line-height:1.95; color:rgba(255,255,255,0.7); font-weight:300; letter-spacing:0.01em; }
+  .services-intro { font-size:15px; line-height:1.95; color:rgba(255,255,255,0.88); font-weight:400; letter-spacing:0.01em; }
   .services-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
   .service-card { background:rgba(255,255,255,0.04); border:1px solid rgba(58,125,90,0.18); padding:44px 36px; transition:all 0.4s; position:relative; overflow:hidden; border-radius:20px; }
   .service-card::after { content:''; position:absolute; bottom:0; left:0; width:0; height:3px; background:var(--green); border-radius:100px; transition:width 0.4s; }
@@ -140,9 +140,9 @@
   .service-card:hover::after { width:100%; }
   .service-icon { width:44px; height:44px; border:1px solid rgba(58,125,90,0.35); border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--green); }
   .service-name { font-family:'Lora', serif; font-size:26px; font-weight:600; color:#f0f4f0; margin-bottom:12px; letter-spacing:-0.01em; }
-  .service-desc { font-size:15px; line-height:1.85; color:rgba(255,255,255,0.75); font-weight:300; letter-spacing:0.01em; }
+  .service-desc { font-size:15px; line-height:1.85; color:rgba(255,255,255,0.90); font-weight:400; letter-spacing:0.01em; }
   .service-list { margin-top:20px; list-style:none; display:flex; flex-direction:column; gap:8px; }
-  .service-list li { font-size:14px; color:rgba(255,255,255,0.7); padding-left:20px; position:relative; font-weight:400; letter-spacing:0.02em; }
+  .service-list li { font-size:14px; color:rgba(255,255,255,0.88); padding-left:20px; position:relative; font-weight:400; letter-spacing:0.02em; }
   .service-list li::before { content:'—'; position:absolute; left:0; color:var(--green); }
 
   /* PROCESS */
@@ -159,7 +159,7 @@
   .process-step:hover .step-desc { color:rgba(255,255,255,0.65); }
   .step-num { font-family:'Playfair Display', serif; font-size:64px; font-weight:400; font-style:italic; color:var(--muted); line-height:1; margin-bottom:16px; transition:color 0.35s; opacity:0.5; }
   .step-name { font-family:'Playfair Display', serif; font-size:22px; font-weight:700; color:var(--dark); margin-bottom:10px; letter-spacing:-0.01em; transition:color 0.35s; }
-  .step-desc { font-size:14px; line-height:1.85; color:var(--muted); font-weight:300; letter-spacing:0.01em; transition:color 0.35s; }
+  .step-desc { font-size:14px; line-height:1.85; color:var(--muted); font-weight:400; letter-spacing:0.01em; transition:color 0.35s; }
 
   /* CTA */
   .cta-section { margin:36px 72px; background:var(--green); border-radius:32px; padding:80px 72px; text-align:center; position:relative; overflow:hidden; }
@@ -169,7 +169,7 @@
   .cta-tag .tag-text { color:rgba(255,255,255,0.7); }
   .cta-title { font-family:'Playfair Display', serif; font-size:clamp(32px,3.8vw,54px); font-weight:700; color:#fff; line-height:1.12; margin-bottom:18px; position:relative; letter-spacing:-0.01em; }
   .cta-title span { font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:400; font-size:0.9em; }
-  .cta-sub { font-size:15px; color:rgba(255,255,255,0.8); max-width:480px; margin:0 auto 44px; line-height:1.9; font-weight:300; letter-spacing:0.01em; }
+  .cta-sub { font-size:15px; color:rgba(255,255,255,0.92); max-width:480px; margin:0 auto 44px; line-height:1.9; font-weight:400; letter-spacing:0.01em; }
   .cta-buttons { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; position:relative; }
   .cta-section .btn-primary { background:#fff; color:var(--green); }
   .cta-section .btn-primary:hover { background:var(--bg); box-shadow:0 8px 24px rgba(0,0,0,0.15); }
